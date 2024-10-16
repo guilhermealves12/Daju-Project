@@ -1,0 +1,73 @@
+#testimonials {
+  display: flex;
+  width: 100%;
+  padding: 72px 120px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  background: #ffe5ec;
+}
+
+#testimonials .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#testimonials_content .section-title {
+  width: 560px;
+  color: #111;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+}
+
+#testimonials_content .section-subtitle {
+  width: 560px;
+  color: var(Neutral Color/Grey 20);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+#review {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+#review .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+}
+
+#review .stars {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+#review .reviews-text {
+  align-self: stretch;
+  color: #111;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+#review .person-name {
+  color: #111;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}

@@ -1,0 +1,124 @@
+#content {
+  display: flex;
+  width: 100%;
+  padding: 70px 120px 72px 120px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  background-color: #ffe5ec;
+}
+#home {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  align-self: stretch;
+}
+
+#banner {
+  height: 640px;
+  width: 560px;
+}
+
+#cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+#cta .title {
+  color: #111;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+#cta .description {
+  color: #111;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#cta_buttons {
+  display: flex;
+  padding-top: 16px;
+  align-items: center;
+  gap: 20px;
+}
+
+#cta_buttons .button-text {
+  width: 217px;
+  color: #111;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* BENEFITS */
+
+#benefits {
+  display: flex;
+  width: 100%px;
+  padding: 72px 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  background-color: #ffe5ec;
+}
+
+#benefits .title {
+  width: 768px;
+  color: #111;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#bnf {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+
+#cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+#cnt .mini-box {
+  width: 48px;
+  height: 48px;
+}
+
+#cnt .sub-title {
+  align-self: stretch;
+  color: #111;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+#cnt .description {
+  align-self: stretch;
+  color: #111;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
