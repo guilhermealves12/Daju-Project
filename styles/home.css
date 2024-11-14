@@ -1,7 +1,7 @@
 #content {
   display: flex;
   width: 100%;
-  padding: 70px 120px 72px 120px;
+  padding: 70px 120px 0px 120px;
   flex-direction: column;
   align-items: center;
   gap: 80px;
@@ -64,12 +64,12 @@
 
 #benefits {
   display: flex;
-  width: 100%px;
-  padding: 72px 200px;
+  width: 100%;
+  padding: 0px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 45px;
   background-color: #ffe5ec;
 }
 
@@ -77,7 +77,7 @@
   width: 768px;
   color: #111;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;

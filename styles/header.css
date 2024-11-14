@@ -20,10 +20,7 @@ header {
   gap: 32px;
 }
 
-#nav_logo {
-  width: 63px;
-  height: 27px;
-}
+/* #nav_logo {} */
 
 .nav-item a {
   color: #111;
