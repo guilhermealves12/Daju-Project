@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre - Loja de Personalizados</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        line-height: 1.6;
+        color: #333;
+      }
+
+      header {
+        width: 100%;
+        padding: 0px 0%;
+      }
+
+      #navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #ffc2d1;
+        height: 72px;
+        padding: 0px 120px;
+        /* border-bottom: 1px solid #111; */
+      }
+
+      #nav_list {
+        display: flex;
+        list-style: none;
+        gap: 32px;
+      }
+
+      /* #nav_logo {} */
+
+      .nav-item a {
+        color: #111;
+        font-family: "Poppins" sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        text-decoration: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        margin-left: 1.5rem;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #666;
+      }
+
+      .sobre-container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      .sobre-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .sobre-header h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      .sobre-content {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .sobre-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto 2rem;
+        display: block;
+        object-fit: cover;
+        border: 3px solid #f8f8f8;
+      }
+
+      @media (max-width: 768px) {
+        .sobre-header h1 {
+          font-size: 2rem;
+        }
+
+        .sobre-content {
+          padding: 1rem;
+        }
+      }
+
+      /* FOOTER CSS */
+
+      #footer {
+        display: flex;
+        width: 100%;
+        padding: 80px 120px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        background-color: #ffb3c6;
+      }
+
+      #footer_informations {
+        display: flex;
+        height: 248px;
+        align-items: flex-start;
+        gap: 243px;
+        align-self: stretch;
+      }
+
+      #footer_informations .links {
+        width: 572px;
+        height: 225px;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        flex: 1 0 0;
+      }
+      #footer_informations .footer-logo {
+        width: 63px;
+        height: 27px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+      }
+
+      #footer_list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        flex: 1 0 0;
+        list-style: none;
+      }
+
+      #footer_list .footer-item {
+        display: flex;
+        padding: 8px 0px;
+        align-items: flex-start;
+        align-self: stretch;
+      }
+
+      .footer-item a {
+        text-decoration: none;
+        flex: 1 0 0;
+        color: #111;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+      }
+
+      #newsletter {
+        display: flex;
+        width: 500px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
+      #newsletter .newsletter-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+      }
+
+      #newsletter .newsletter-title {
+        align-self: stretch;
+        color: #111;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+      }
+
+      #newsletter .newsletter-description {
+        align-self: stretch;
+        color: #111;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      #form {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+      }
+
+      #form .email {
+        display: flex;
+        padding: 12px;
+        align-items: center;
+        gap: 8px;
+        flex: 1 0 0;
+        border: 1px solid #111;
+        background: var(--White, #fff);
+
+        flex: 1 0 0;
+        color: #505050;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      #form .form-button {
+        display: flex;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid #111;
+
+        color: #111;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      #credits .hr1 {
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
+
+      #row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+      }
+
+      #row .row-credits {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      #row .credits-text {
+        color: #111;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+      }
+
+      #row .footer-links {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        color: #111;
+        list-style: none;
+      }
+
+      .link-text a {
+        color: #111;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        text-decoration-line: underline;
+      }
+
+      #row .social-links {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      #row .social {
+        width: 24px;
+        height: 24px;
+      }
+
+      /* SOBRE HTML */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1 id="nav_logo">Juliana Romão</h1>
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#products_card">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer">Contatos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="sobre-container">
+      <div class="sobre-header">
+        <h1>Sobre Nós</h1>
+      </div>
+
+      <div class="sobre-content">
+        <img src="assets/canecas personalizadas.jpg" alt="" class="sobre-image" />
+
+        <h2>Nossa História</h2>
+        <p>
+          Olá! Sou [Nome da Proprietária], fundadora da [Nome da Loja]. Nossa
+          jornada começou com uma paixão por criar produtos únicos e
+          personalizados que traduzem a personalidade de cada cliente em peças
+          especiais.
+        </p>
+
+        <br />
+
+        <h2>Nossa Missão</h2>
+        <p>
+          Nosso objetivo é transformar momentos em memórias através de produtos
+          personalizados feitos com amor e dedicação. Cada peça é cuidadosamente
+          criada para atender às expectativas e necessidades únicas de nossos
+          clientes.
+        </p>
+
+        <br />
+
+        <h2>Nossos Valores</h2>
+        <ul>
+          <li>Qualidade em cada detalhe</li>
+          <li>Atendimento personalizado</li>
+          <li>Compromisso com prazos</li>
+          <li>Inovação constante</li>
+        </ul>
+
+        <br />
+
+        <h2>Expertise</h2>
+        <p>
+          Com [X] anos de experiência no mercado de produtos personalizados,
+          desenvolvemos técnicas e processos que garantem a qualidade e
+          durabilidade de cada item que produzimos.
+        </p>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div id="footer_informations">
+        <h1 id="footer_logo">Juliana Romão</h1>
+        <ul id="footer_list">
+          <li class="footer-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="footer-item">
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li class="footer-item">
+            <a href="index.html#products_card">Serviços</a>
+          </li>
+          <li class="footer-item">
+            <a href="#footer">Contatos</a>
+          </li>
+        </ul>
+
+        <div id="newsletter">
+          <div class="newsletter-text">
+            <p class="newsletter-title">Assine a nossa Newsletter</p>
+            <p class="newsletter-description">
+              Inscreva-se na nossa newsletter e fique a par dos nossos
+              lançamentos.
+            </p>
+          </div>
+
+          <div id="form">
+            <input class="email" type="text" placeholder="O seu email" />
+            <button class="form-button">Enviar</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="credits">
+        <hr class="hr1" />
+      </div>
+
+      <span id="row">
+        <div class="row-credits">
+          <p class="credits-text">© 2023 . Todos os direitos reservados.</p>
+          <ul class="footer-links">
+            <li class="link-text">
+              <a href="">Política de Privacidade</a>
+            </li>
+            <li class="link-text">
+              <a href="">Termos e Condições</a>
+            </li>
+            <li class="link-text">
+              <a href="">Política de Cookies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-links">
+          <a class="social" href="https://pt-br.facebook.com/"
+            ><img src="assets/Facebook.svg" alt="Facebook"
+          /></a>
+          <a
+            class="social"
+            href="https://www.instagram.com/mimospersonalizados_daju/"
+            ><img src="assets/Instagram.svg" alt="Instagram"
+          /></a>
+        </div>
+      </span>
+    </footer>
+  </body>
+</html>
