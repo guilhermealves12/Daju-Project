@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <title>Sobre - Loja de Personalizados</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -16,7 +17,8 @@
 
       body {
         line-height: 1.6;
-        color: #333;
+        color: #111;
+        background-color: #ffe5ec;
       }
 
       header {
@@ -55,7 +57,7 @@
 
       .nav-links a {
         text-decoration: none;
-        color: #333;
+        color: #111;
         margin-left: 1.5rem;
         transition: color 0.3s;
       }
@@ -68,6 +70,7 @@
         max-width: 800px;
         margin: 2rem auto;
         padding: 0 1rem;
+        background-color: #ffe5ec;
       }
 
       .sobre-header {
@@ -77,12 +80,12 @@
 
       .sobre-header h1 {
         font-size: 2.5rem;
-        color: #333;
+        color: #111;
         margin-bottom: 1rem;
       }
 
       .sobre-content {
-        background-color: #fff;
+        background-color: #ffe5ec;
         padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -108,195 +111,7 @@
         }
       }
 
-      /* FOOTER CSS */
-
-      #footer {
-        display: flex;
-        width: 100%;
-        padding: 80px 120px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-        background-color: #ffb3c6;
-      }
-
-      #footer_informations {
-        display: flex;
-        height: 248px;
-        align-items: flex-start;
-        gap: 243px;
-        align-self: stretch;
-      }
-
-      #footer_informations .links {
-        width: 572px;
-        height: 225px;
-        display: flex;
-        align-items: flex-start;
-        gap: 40px;
-        flex: 1 0 0;
-      }
-      #footer_informations .footer-logo {
-        width: 63px;
-        height: 27px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex: 1 0 0;
-      }
-
-      #footer_list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        flex: 1 0 0;
-        list-style: none;
-      }
-
-      #footer_list .footer-item {
-        display: flex;
-        padding: 8px 0px;
-        align-items: flex-start;
-        align-self: stretch;
-      }
-
-      .footer-item a {
-        text-decoration: none;
-        flex: 1 0 0;
-        color: #111;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 21px;
-      }
-
-      #newsletter {
-        display: flex;
-        width: 500px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-      }
-
-      #newsletter .newsletter-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        align-self: stretch;
-      }
-
-      #newsletter .newsletter-title {
-        align-self: stretch;
-        color: #111;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 24px;
-      }
-
-      #newsletter .newsletter-description {
-        align-self: stretch;
-        color: #111;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-      }
-
-      #form {
-        display: flex;
-        align-items: flex-start;
-        gap: 16px;
-        align-self: stretch;
-      }
-
-      #form .email {
-        display: flex;
-        padding: 12px;
-        align-items: center;
-        gap: 8px;
-        flex: 1 0 0;
-        border: 1px solid #111;
-        background: var(--White, #fff);
-
-        flex: 1 0 0;
-        color: #505050;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-      }
-      #form .form-button {
-        display: flex;
-        padding: 12px 24px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid #111;
-
-        color: #111;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-      }
-      #credits .hr1 {
-        border: 0;
-        border-top: 1px solid #ccc;
-      }
-
-      #row {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        align-self: stretch;
-      }
-
-      #row .row-credits {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-      }
-
-      #row .credits-text {
-        color: #111;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 21px;
-      }
-
-      #row .footer-links {
-        display: flex;
-        align-items: flex-start;
-        gap: 24px;
-        color: #111;
-        list-style: none;
-      }
-
-      .link-text a {
-        color: #111;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 21px;
-        text-decoration-line: underline;
-      }
-
-      #row .social-links {
-        display: flex;
-        align-items: flex-start;
-        gap: 12px;
-      }
-
-      #row .social {
-        width: 24px;
-        height: 24px;
-      }
-
-      /* SOBRE HTML */
+      /* about html */
     </style>
   </head>
   <body>
@@ -308,7 +123,7 @@
             <a href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a href="sobre.html">Sobre</a>
+            <a href="about.html">Sobre</a>
           </li>
           <li class="nav-item">
             <a href="index.html#products_card">Serviços</a>
@@ -326,24 +141,29 @@
       </div>
 
       <div class="sobre-content">
-        <img src="assets/canecas personalizadas.jpg" alt="" class="sobre-image" />
+        <img
+          src="assets/canecas personalizadas.jpg"
+          alt=""
+          class="sobre-image"
+        />
 
         <h2>Nossa História</h2>
         <p>
-          Olá! Sou [Nome da Proprietária], fundadora da [Nome da Loja]. Nossa
-          jornada começou com uma paixão por criar produtos únicos e
-          personalizados que traduzem a personalidade de cada cliente em peças
-          especiais.
+          Olá! Sou a Jú, fundadora da Mimos Personalizados da Jú. Desde janeiro
+          de 2023, transformamos sonhos em realidade por meio de produtos únicos
+          e personalizados. Nossa paixão é criar peças que reflitam a essência e
+          a personalidade de cada cliente, tornando cada detalhe especial. Cada
+          mimo que produzimos é feito com muito amor, cuidado e dedicação!
         </p>
 
         <br />
 
         <h2>Nossa Missão</h2>
         <p>
-          Nosso objetivo é transformar momentos em memórias através de produtos
-          personalizados feitos com amor e dedicação. Cada peça é cuidadosamente
-          criada para atender às expectativas e necessidades únicas de nossos
-          clientes.
+          Nosso objetivo é transformar momentos em memórias por meio de produtos
+          personalizados feitos com amor e dedicação. Cada peça é criada com
+          cuidado para atender às expectativas e necessidades únicas de nossos
+          clientes, garantindo que cada mimo seja verdadeiramente especial.
         </p>
 
         <br />
@@ -360,9 +180,14 @@
 
         <h2>Expertise</h2>
         <p>
-          Com [X] anos de experiência no mercado de produtos personalizados,
-          desenvolvemos técnicas e processos que garantem a qualidade e
-          durabilidade de cada item que produzimos.
+          Com 3 anos de experiência no mercado de produtos personalizados,
+          desenvolvemos técnicas e processos que asseguram a qualidade e
+          durabilidade de cada item que produzimos. Além disso, estou
+          constantemente em busca de aprimoramento pessoal e profissional,
+          participando de cursos e workshops que me permitem explorar novas
+          técnicas e tendências. Essa dedicação ao aprendizado contínuo reflete
+          meu compromisso em oferecer o melhor aos nossos clientes, garantindo
+          que cada mimo seja uma verdadeira obra de arte.
         </p>
       </div>
     </main>
@@ -375,7 +200,7 @@
             <a href="index.html">Home</a>
           </li>
           <li class="footer-item">
-            <a href="sobre.html">Sobre</a>
+            <a href="about.html">Sobre</a>
           </li>
           <li class="footer-item">
             <a href="index.html#products_card">Serviços</a>
