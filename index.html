@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="styles/budget.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/cards.css" />
-    <script src="script.js"></script>
     <title>Daju Project</title>
   </head>
   <body>
     <header>
       <nav id="navbar">
         <h1 id="nav_logo">Juliana Romão</h1>
+        <button id="menu_toggle" aria-label="Abrir Menu">☰</button>
         <ul id="nav_list">
           <li class="nav-item active">
             <a href="#home">Home</a>
@@ -34,6 +34,7 @@
         </ul>
       </nav>
     </header>
+
     <main id="content">
       <section id="home">
         <div id="cta">
@@ -54,7 +55,7 @@
             </p>
           </div>
         </div>
-        <div id="banner"><img src="assets/Image.png" alt="" /></div>
+        <img id="banner" src="assets/Image.png" alt="" />
       </section>
 
       <section id="benefits">
@@ -369,7 +370,7 @@
               <a href="privacy-policy.html">Política de Privacidade</a>
             </li>
             <li class="link-text">
-              <a href="terms.html">Termos e Condições</a>
+              <a href="terms.html">Termos de Uso</a>
             </li>
           </ul>
         </div>
@@ -386,5 +387,6 @@
         </div>
       </span>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@
   gap: 80px;
   background-color: #ffe5ec;
 }
+
 #home {
   display: flex;
   align-items: center;
@@ -60,6 +61,51 @@
   line-height: 20px;
 }
 
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+  #content {
+    padding: 40px 16px 0px 16px;
+    gap: 40px;
+  }
+
+  #home {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  #banner {
+    width: 100%;
+    height: auto;
+  }
+
+  #cta {
+    align-items: center;
+    text-align: center;
+  }
+
+  #cta .title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  #cta .description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  #cta_buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #cta_buttons .button-text {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
 /* BENEFITS */
 
 #benefits {
@@ -75,6 +121,7 @@
 
 #benefits .title {
   width: 768px;
+  max-width: 90%;
   color: #111;
   text-align: center;
   font-size: 30px;
@@ -113,6 +160,7 @@
   font-weight: 700;
   line-height: 33.6px;
 }
+
 #cnt .description {
   align-self: stretch;
   color: #111;
@@ -121,4 +169,38 @@
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+  #benefits {
+    padding: 16px;
+    gap: 32px;
+  }
+
+  #benefits .title {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 100%;
+  }
+
+  #bnf {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  #cnt .mini-box {
+    width: 32px;
+    height: 32px;
+  }
+
+  #cnt .sub-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #cnt .description {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }

@@ -7,6 +7,7 @@
   gap: 40px;
   background-color: #ff8fab;
 }
+
 #budget_button .budget-text {
   width: 1152px;
   color: var(--White, #fff);
@@ -16,6 +17,7 @@
   font-weight: 700;
   line-height: 57.6px;
 }
+
 #budget_button .budget-description {
   width: 1152px;
   padding-top: 15px;
@@ -25,4 +27,85 @@
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 1200px) {
+  #budget_button .budget-text,
+  #budget_button .budget-description {
+    width: 100%;
+    max-width: 1152px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #budget_button {
+    padding: 40px 24px;
+    gap: 24px;
+  }
+
+  #budget_button .budget-text {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  #budget_button .budget-description {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 8px;
+  }
+
+  #budget_button img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #budget_button {
+    padding: 32px 16px;
+    gap: 20px;
+  }
+
+  #budget_button .budget-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #budget_button .budget-description {
+    font-size: 13px;
+    line-height: 22px;
+    padding-top: 4px;
+  }
+
+  #budget_button img {
+    width: 85%;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #budget_button {
+    padding: 32px 16px;
+    gap: 20px;
+  }
+
+  #budget_button .budget-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #budget_button .budget-description {
+    font-size: 13px;
+    line-height: 22px;
+    padding-top: 4px;
+  }
+
+  #budget_button img {
+    width: 85%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
 }

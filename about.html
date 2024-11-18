@@ -4,122 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/about.css" />
     <title>Sobre - Loja de Personalizados</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-      * {
-        font-family: "Poppins", sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        color: #111;
-        background-color: #ffe5ec;
-      }
-
-      header {
-        width: 100%;
-        padding: 0px 0%;
-      }
-
-      #navbar {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #ffc2d1;
-        height: 72px;
-        padding: 0px 120px;
-        /* border-bottom: 1px solid #111; */
-      }
-
-      #nav_list {
-        display: flex;
-        list-style: none;
-        gap: 32px;
-      }
-
-      /* #nav_logo {} */
-
-      .nav-item a {
-        color: #111;
-        font-family: "Poppins" sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        text-decoration: none;
-      }
-
-      .nav-links a {
-        text-decoration: none;
-        color: #111;
-        margin-left: 1.5rem;
-        transition: color 0.3s;
-      }
-
-      .nav-links a:hover {
-        color: #666;
-      }
-
-      .sobre-container {
-        max-width: 800px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-        background-color: #ffe5ec;
-      }
-
-      .sobre-header {
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-
-      .sobre-header h1 {
-        font-size: 2.5rem;
-        color: #111;
-        margin-bottom: 1rem;
-      }
-
-      .sobre-content {
-        background-color: #ffe5ec;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      .sobre-image {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin: 0 auto 2rem;
-        display: block;
-        object-fit: cover;
-        border: 3px solid #f8f8f8;
-      }
-
-      @media (max-width: 768px) {
-        .sobre-header h1 {
-          font-size: 2rem;
-        }
-
-        .sobre-content {
-          padding: 1rem;
-        }
-      }
-
-      /* about html */
-    </style>
   </head>
   <body>
     <header>
       <nav id="navbar">
         <h1 id="nav_logo">Juliana Romão</h1>
+        <button id="menu_toggle" aria-label="Abrir Menu">☰</button>
         <ul id="nav_list">
           <li class="nav-item active">
-            <a href="index.html">Home</a>
+            <a href="index.html#home">Home</a>
           </li>
           <li class="nav-item">
             <a href="about.html">Sobre</a>
@@ -196,7 +92,7 @@
         <h1 id="footer_logo">Juliana Romão</h1>
         <ul id="footer_list">
           <li class="footer-item">
-            <a href="index.html">Home</a>
+            <a href="index.html#home">Home</a>
           </li>
           <li class="footer-item">
             <a href="about.html">Sobre</a>
@@ -225,10 +121,6 @@
         </div>
       </div>
 
-      <div id="credits">
-        <hr class="hr1" />
-      </div>
-
       <span id="row">
         <div class="row-credits">
           <p class="credits-text">© 2024 . Todos os direitos reservados.</p>
@@ -237,7 +129,7 @@
               <a href="privacy-policy.html">Política de Privacidade</a>
             </li>
             <li class="link-text">
-              <a href="terms.html">Termos e Condições</a>
+              <a href="terms.html">Termos de Uso</a>
             </li>
           </ul>
         </div>
@@ -254,5 +146,6 @@
         </div>
       </span>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -25,6 +25,7 @@
   gap: 40px;
   flex: 1 0 0;
 }
+
 #footer_informations .footer-logo {
   width: 63px;
   height: 27px;
@@ -109,14 +110,13 @@
   flex: 1 0 0;
   border: 1px solid #111;
   background: var(--White, #fff);
-
-  flex: 1 0 0;
   color: #505050;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
+
 #form .form-button {
   display: flex;
   padding: 12px 24px;
@@ -124,16 +124,11 @@
   align-items: center;
   gap: 8px;
   border: 1px solid #111;
-
   color: #111;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-}
-#credits .hr1 {
-  border: 0;
-  border-top: 1px solid #ccc;
 }
 
 #row {
@@ -183,4 +178,143 @@
 #row .social {
   width: 24px;
   height: 24px;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 1024px) {
+  #footer {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  #footer_informations {
+    gap: 60px;
+    height: auto;
+  }
+
+  #newsletter {
+    width: auto;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    padding: 40px 20px;
+  }
+
+  #footer_informations {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #footer_informations .links {
+    width: 100%;
+    gap: 20px;
+  }
+
+  #footer_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #footer_list .footer-item {
+    padding: 4px 12px;
+  }
+
+  #newsletter {
+    width: 100%;
+  }
+
+  #form {
+    flex-direction: column;
+  }
+
+  #form .email,
+  #form .form-button {
+    width: 100%;
+  }
+
+  #row {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  #row .row-credits {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #row .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #footer {
+    padding: 32px 16px;
+  }
+
+  #footer_list {
+    gap: 12px;
+  }
+
+  #footer_list .footer-item a {
+    font-size: 13px;
+  }
+
+  #newsletter .newsletter-title,
+  #newsletter .newsletter-description {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #form .email,
+  #form .form-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #row .credits-text,
+  .link-text a {
+    font-size: 12px;
+  }
+
+  #row .social {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+#footer_logo {
+  color: #111;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  #footer_logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #footer_informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #footer_logo {
+    font-size: 18px;
+  }
 }
