@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
@@ -246,9 +249,18 @@
             </p>
           </div>
 
-          <div id="form">
-            <input class="email" type="text" placeholder="O seu email" />
-            <button class="form-button">Enviar</button>
+          <div class="form-container">
+            <form class="form" id="emailForm">
+              <input
+                type="email"
+                class="input-email"
+                id="userEmail"
+                placeholder="Digite seu email"
+                required
+              />
+              <button type="submit" class="submit-button">Enviar</button>
+            </form>
+            <div id="message" class="message"></div>
           </div>
         </div>
       </div>
@@ -267,17 +279,18 @@
         </div>
 
         <div class="social-links">
-          <a class="social" href="https://pt-br.facebook.com/"
-            ><img src="assets/Facebook.svg" alt="Facebook"
+          <a
+            class="social"
+            href="https://www.tiktok.com/@julianaromao6?is_from_webapp=1&sender_device=pc"
+            ><img src="assets/tiktok-logo.svg" alt="Facebook"
           /></a>
           <a
             class="social"
             href="https://www.instagram.com/mimospersonalizados_daju/"
-            ><img src="assets/Instagram.svg" alt="Instagram"
+            ><img src="assets/instagram-logo.svg" alt="Instagram"
           /></a>
         </div>
       </span>
     </footer>
-    <script src="./script.js"></script>
   </body>
 </html>

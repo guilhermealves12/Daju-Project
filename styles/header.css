@@ -12,6 +12,16 @@ header {
   height: 72px;
   padding: 0 120px;
   box-sizing: border-box;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin-top: 72px;
 }
 
 #nav_logo {
@@ -33,6 +43,28 @@ header {
   font-weight: 400;
   line-height: 150%;
   text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-item a:hover {
+  color: #ff69b4;
+  transform: scale(1.1);
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff69b4;
+  transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
 }
 
 /* Botão de menu */

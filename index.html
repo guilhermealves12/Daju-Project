@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/home.css" />
@@ -11,6 +13,7 @@
     <link rel="stylesheet" href="styles/budget.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/cards.css" />
+
     <title>Daju Project</title>
   </head>
   <body>
@@ -49,7 +52,9 @@
           </p>
 
           <div id="cta_buttons">
-            <img src="assets/Home Button.svg" alt="Button" />
+            <a href="https://wa.link/0aqc1i"
+              ><img src="assets/Home Button.svg" alt="Button"
+            /></a>
             <p class="button-text">
               Agenda personalizada que combina com você.
             </p>
@@ -107,7 +112,9 @@
                   sua essência em cada detalhe.
                 </p>
                 <!-- <p class="card-price">R$ 00,0</p> -->
-                <a href="#" class="buy-button">Garanta já</a>
+                <a href="https://wa.link/0aqc1i" class="buy-button"
+                  >Garanta já</a
+                >
               </div>
             </div>
 
@@ -125,7 +132,9 @@
                   especial, com itens feitos sob medida para você.
                 </p>
                 <!-- <p class="card-price">R$ 00,0</p> -->
-                <a href="#" class="buy-button">Garanta já</a>
+                <a href="https://wa.link/0aqc1i" class="buy-button"
+                  >Garanta já</a
+                >
               </div>
             </div>
 
@@ -143,7 +152,9 @@
                   organização e um toque profissional para sua ocasião.
                 </p>
                 <!-- <p class="card-price">R$ 00,0</p> -->
-                <a href="#" class="buy-button">Garanta já</a>
+                <a href="https://wa.link/0aqc1i" class="buy-button"
+                  >Garanta já</a
+                >
               </div>
             </div>
 
@@ -161,7 +172,9 @@
                   com elegância e profissionalismo.
                 </p>
                 <!-- <p class="card-price">R$ 00,0</p> -->
-                <a href="#" class="buy-button">Garanta já</a>
+                <a href="https://wa.link/0aqc1i" class="buy-button"
+                  >Garanta já</a
+                >
               </div>
             </div>
           </div>
@@ -199,11 +212,12 @@
               </p>
             </div>
 
-            <img
-              class="button-cta"
-              src="assets/ProductsButton.svg"
-              alt="Button CTA"
-            />
+            <a href="https://wa.link/0aqc1i"
+              ><img
+                class="button-cta"
+                src="assets/ProductsButton.svg"
+                alt="Button CTA"
+            /></a>
           </div>
           <img
             class="banner-highlights"
@@ -249,11 +263,12 @@
               </p>
             </div>
 
-            <img
-              class="button-cta"
-              src="assets/ProductsButton.svg"
-              alt="Button CTA"
-            />
+            <a href="https://wa.link/0aqc1i"
+              ><img
+                class="button-cta"
+                src="assets/ProductsButton.svg"
+                alt="Button CTA"
+            /></a>
           </div>
         </div>
       </section>
@@ -323,7 +338,7 @@
           entender suas ideias.
         </p>
       </div>
-      <a href="https://web.whatsapp.com/">
+      <a href="https://wa.link/0aqc1i">
         <img src="assets/cta button.svg" alt="" />
       </a>
     </section>
@@ -355,9 +370,18 @@
             </p>
           </div>
 
-          <div id="form">
-            <input class="email" type="text" placeholder="O seu email" />
-            <button class="form-button">Enviar</button>
+          <div class="form-container">
+            <form class="form" id="emailForm">
+              <input
+                type="email"
+                class="input-email"
+                id="userEmail"
+                placeholder="Digite seu email"
+                required
+              />
+              <button type="submit" class="submit-button">Enviar</button>
+            </form>
+            <div id="message" class="message"></div>
           </div>
         </div>
       </div>
@@ -376,13 +400,15 @@
         </div>
 
         <div class="social-links">
-          <a class="social" href="https://pt-br.facebook.com/"
-            ><img src="assets/Facebook.svg" alt="Facebook"
+          <a
+            class="social"
+            href="https://www.tiktok.com/@julianaromao6?is_from_webapp=1&sender_device=pc"
+            ><img src="assets/tiktok-logo.svg" alt="Facebook"
           /></a>
           <a
             class="social"
             href="https://www.instagram.com/mimospersonalizados_daju/"
-            ><img src="assets/Instagram.svg" alt="Instagram"
+            ><img src="assets/instagram-logo.svg" alt="Instagram"
           /></a>
         </div>
       </span>

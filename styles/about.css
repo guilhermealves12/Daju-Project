@@ -1,38 +1,7 @@
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   color: #111;
   background-color: #ffe5ec;
 }
-
-header {
-  width: 100%;
-  padding: 0px 0%;
-}
-
-#navbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #ffc2d1;
-  height: 72px;
-  padding: 0px 120px;
-  /* border-bottom: 1px solid #111; */
-}
-
-#nav_list {
-  display: flex;
-  list-style: none;
-  gap: 32px;
-}
-
-/* #nav_logo {} */
 
 .nav-item a {
   color: #111;
